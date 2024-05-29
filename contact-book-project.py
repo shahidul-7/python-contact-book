@@ -14,13 +14,14 @@ while True:
         "4. Edit Contact \n"
         "5. Delete Contact \n"
         "6. Exit \n"
-        "Please input the number between 1-6: "
+        "Please input the number between 1-6:  "
     ))
 
     if choice == 1: #Check if the option is available in choice variable above.
         Name = input("Enter the Name: ")
         Number = input("Enter the Phone Number: ")
         contact[Name] = Number #Way to add contact items to the Dictionary 'Contact'
+        
         print("New contact has been added. Please choose an option from  below:\n")
 
     elif choice == 2:
