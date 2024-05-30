@@ -4,7 +4,7 @@ contact = {} #Empty Dictionary
 def DisplayContact(): 
     print()
     for name, number in contact.items(): #Display Dictionary Key and value together. 
-        print(f"Name: {name} \t Number: {number}\n")
+        print(f"Name: {name} \nNumber: {number}\n")
 
 while True:
     choice = int(input(
@@ -39,7 +39,7 @@ while True:
             print("Please choose an option from  below:\n")
 
     elif choice == 4: #Edit contact option
-        EditContact = input("Please enter the name which number you want to edit: ")
+        EditContact = input("Please enter the name which number you want to edit(We only can edit number): ")
         if EditContact in contact: 
             enterMobile = input("Enter The mobile number to update with: ")
             contact[EditContact] = enterMobile #This is the role to update dictionary items. Dictname[DictKey] =  Value to update.
